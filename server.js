@@ -11,8 +11,8 @@ app.use(express.json());
 
 
 // Set up API routes
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routes/apiRoutes.js")(app);
+require("./app/routes/htmlRoutes.js")(app);
 
 // Start server
 app.listen(PORT, function() {
