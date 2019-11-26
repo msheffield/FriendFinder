@@ -212,9 +212,10 @@
                 }
             })
             .done(function(data) {
-                $("#match-name").html(data.match.name);
-                $("#match-photo").attr("src", data.match.photo);
-                $("#matchModal").modal('show');
+                console.log(data);
+                $("#match-name").html(data.matchName);
+                $("#match-photo").attr("src", data.matchPhoto);
+                $("#matchModal").modal("show");
             })
 
     });
